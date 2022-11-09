@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+</head>
+<body>
+     <!--Ellen Belini de Oliveira   RA:202202311448
+    Guilherme Germano Ferreira     RA:202202147796-->
+    <h1>Menu Fast Food</h1>
+    <h2> Hot Dog R$ 1.00 <br> Hambúrguer R$ 1.30 <br>Cheeseburguer R$ 1.50<br> Refrigerante em lata R$ 1.00<br>Batatas fritas R$ 0.80<br></h2>
+        <script>  
+            let cliente = prompt("Digite o seu nome:");
+            let produto = prompt("Digite o nome de um produto");
+            let quantidadeProduto = prompt("Digite a quantidade de produtos");
+            let valorProduto = prompt("Digite o valor do produto");
+            let totalProduto = valorProduto * quantidadeProduto;
+
+            window.document.write(`Produto: ${produto} </br>`);
+            window.document.write("Valor: " + valorProduto + "</br>");
+            window.document.write("Quantidade: " + quantidadeProduto + "</br>");
+            window.document.write("Total: " + totalProduto);
+        </script>
+</body>
+</html>

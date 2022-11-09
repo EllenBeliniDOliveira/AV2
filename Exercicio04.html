@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+</head>
+<body>
+     <!--Ellen Belini de Oliveira   RA:202202311448
+    Guilherme Germano Ferreira     RA:202202147796-->
+    <script>
+        let nome = prompt("Digite seu nome: ");
+        let banco = prompt("Digite o nome do banco:");
+        let numConta = prompt("Digite o número da sua conta:");
+        let chequeDeb = prompt("Digite o valor total de cheques a debitar:");
+        let chequeCre = prompt("Digite o valor total de cheque a creditar");
+        let dinheiro = prompt("Digite o valor total em dinheiro:");
+        let limiteCre = prompt("Digite o valor do seu limite em credito:");
+        let saldo = prompt("Digite o valor do saldo atual:");
+
+        total = (Number(saldo)+ Number(chequeCre)+ Number(limiteCre))-Number(dinheiro)-Number(chequeDeb);
+
+        window.document.write("Nome:" + nome +  "</br>");
+        window.document.write("Nome do banco:" + banco + "</br>");
+        window.document.write("Número da conta:" + numConta + "</br>");
+        window.document.write(`Saldo disponível:  ${total} </br>` );
+
+    </script>
+</body>
+</html>

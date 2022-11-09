@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<body>
+    <!--Ellen Belini de Oliveira   RA:202202311448
+    Guilherme Germano Ferreira     RA:202202147796-->
+    
+    <script>
+        let produto = prompt('Digite o produto.');
+        let valor = prompt('Digite o valor do Produto.');
+        let taxa1 = prompt('Digite a taxa de impostos.');
+        let taxa2 = prompt('Digite a taxa do distribuidor.');
+
+        taxa1 = (Number(valor) * Number(taxa1)/100);
+        let valortaxa2 = ((Number(taxa1)+Number(valor))/Number(taxa2));
+        let valortotaltaxa2 = valortaxa2 * taxa2;
+
+        window.document.write(`Produto: ${produto}</br>`);
+        window.document.write(`Valor: ${valor}</br>`);
+        window.document.write(`Taxa de impostos: ${taxa1}</br>`);
+        window.document.write(`Taxa do distribuidor: ${taxa2}</br>`);
+        window.document.write(`Preço final: ${valortotaltaxa2}</br>`);
+    </script>
+</body>
+</html>
